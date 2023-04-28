@@ -1,0 +1,26 @@
+x is 3.
+show x.
+!provided(x == 3)!start
+	x is x + 1.
+!end
+show x.
+y is 5.
+!provided(y != 5)!start
+	y is y - 1.
+!end
+!alternatively!start
+	y is y + 1.
+!end
+show y.
+z is 7.
+!loop (z < 10) !start
+	show z.
+	z is z + 1.
+!end
+l is 4.
+!provided(l > 0)!start
+	show l.
+	l is l - 3.
+	show l.
+!end
+
